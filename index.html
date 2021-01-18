@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Lato">
+
+		<title>Sonic 3 & Knuckles into Sonic 3 and Sonic and Knuckles</title>
+		<script type="module" src="script.js?v004"></script>
+		<link rel="stylesheet" href="style.css?v004">
+
+
+	</head>
+	<body>
+		<div id="drop-areaholder">
+			<div id="drop-area">
+				<form class="my-form">
+					<p>Separate your Steam Sonic 3 & Knuckles rom by dropping it here.</p>
+					
+					<input type="file" id="fileElem" accept=".bin" onchange="handleFiles(this.files)">
+					<label class="button" for="fileElem">Select .bin file</label>
+				</form>
+
+			<div id="progressbar" class="hidden">
+				Please wait....
+			</div>
+			</div>
+		</div>
+
+		<div id="results" class="hidden">
+			<a href="" class="skrom" download="Sonic_Knuckles.bin">Sonic & Knuckes</a>
+			<a href="" class="s3rom" download="Sonic3.bin">Sonic 3</a>
+		</div>
+	</body>
+</html>
